@@ -1,0 +1,19 @@
+package billing.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import billing.entity.Billing;
+
+@RestController
+public class BillingService {
+	
+	@Autowired
+	private Billing billing;
+	
+	@RequestMapping("/GetBilling")
+	public Billing getBilling() {
+		return null;
+	}
+}

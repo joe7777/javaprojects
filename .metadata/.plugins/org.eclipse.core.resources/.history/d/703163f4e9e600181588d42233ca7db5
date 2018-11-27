@@ -1,0 +1,12 @@
+package billing.runner;
+
+import org.springframework.boot.SpringApplication;
+
+public class PocBilling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			SpringApplication.run(PocBilling.class, args)
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;certification.SaisieErroneeException&apos; to &apos;TestSaisieErroneeException&apos;&#x0D;&#x0A;- Original project: &apos;Certification&apos;&#x0D;&#x0A;- Original element: &apos;certification.SaisieErroneeException&apos;&#x0D;&#x0A;- Renamed element: &apos;certification.TestSaisieErroneeException&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SaisieErroneeException&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;certification{SaisieErroneeException.java[SaisieErroneeException" matchStrategy="1" name="TestSaisieErroneeException" qualified="false" references="true" similarDeclarations="false" stamp="1535251832516" textual="false" version="1.0"/>
+</session>

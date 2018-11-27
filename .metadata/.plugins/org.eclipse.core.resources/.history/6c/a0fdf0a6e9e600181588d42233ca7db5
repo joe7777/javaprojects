@@ -1,0 +1,9 @@
+package billing.entity;
+
+public class BillingItem {
+	
+	long id;
+	String name;
+	
+	
+}

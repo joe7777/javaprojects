@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<definitions id="Definition"
+             targetNamespace="http://www.jboss.org/drools"
+             typeLanguage="http://www.java.com/javaTypes"
+             expressionLanguage="http://www.mvel.org/2.0"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             xmlns:g="http://www.jboss.org/drools/flow/gpd"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:tns="http://www.jboss.org/drools">
+
+  <process processType="Private" isExecutable="true" id="RF1" name="RuleFlow1" tns:packageName="cours" >
+
+    <extensionElements>
+     <tns:import name="org.kie.api.runtime.process.CaseAssignment" />
+     <tns:import name="org.kie.api.runtime.process.CaseData" />
+    </extensionElements>
+    <!-- nodes -->
+    <startEvent id="42c345fc-b619-4ea4-9e75-e909f64cdc18" name="Start"  isInterrupting="false">
+    </startEvent>
+    <businessRuleTask id="f8a184f8-4da8-4081-b582-d8b4bde11459" name="Verify" g:ruleFlowGroup="Group1" 
+ implementation="http://www.jboss.org/drools/rule" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="804e0d5a-9167-44b4-987d-2fcea81f3e98" name="Calculation" g:ruleFlowGroup="Group2" 
+ implementation="http://www.jboss.org/drools/rule" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <endEvent id="fd913bfd-29c2-49da-a43c-100b5cfffd91" name="End" >
+        <terminateEventDefinition />
+    </endEvent>
+
+    <!-- connections -->
+    <sequenceFlow id="42c345fc-b619-4ea4-9e75-e909f64cdc18-f8a184f8-4da8-4081-b582-d8b4bde11459" sourceRef="42c345fc-b619-4ea4-9e75-e909f64cdc18" targetRef="f8a184f8-4da8-4081-b582-d8b4bde11459" />
+    <sequenceFlow id="f8a184f8-4da8-4081-b582-d8b4bde11459-804e0d5a-9167-44b4-987d-2fcea81f3e98" sourceRef="f8a184f8-4da8-4081-b582-d8b4bde11459" targetRef="804e0d5a-9167-44b4-987d-2fcea81f3e98" />
+    <sequenceFlow id="804e0d5a-9167-44b4-987d-2fcea81f3e98-fd913bfd-29c2-49da-a43c-100b5cfffd91" sourceRef="804e0d5a-9167-44b4-987d-2fcea81f3e98" targetRef="fd913bfd-29c2-49da-a43c-100b5cfffd91" />
+
+  </process>
+
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="RF1" >
+      <bpmndi:BPMNShape bpmnElement="42c345fc-b619-4ea4-9e75-e909f64cdc18" >
+        <dc:Bounds x="100" y="100" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="f8a184f8-4da8-4081-b582-d8b4bde11459" >
+        <dc:Bounds x="175" y="96" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="804e0d5a-9167-44b4-987d-2fcea81f3e98" >
+        <dc:Bounds x="284" y="98" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="fd913bfd-29c2-49da-a43c-100b5cfffd91" >
+        <dc:Bounds x="395" y="98" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="42c345fc-b619-4ea4-9e75-e909f64cdc18-f8a184f8-4da8-4081-b582-d8b4bde11459" >
+        <di:waypoint x="124" y="124" />
+        <di:waypoint x="215" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="f8a184f8-4da8-4081-b582-d8b4bde11459-804e0d5a-9167-44b4-987d-2fcea81f3e98" >
+        <di:waypoint x="215" y="120" />
+        <di:waypoint x="324" y="122" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="804e0d5a-9167-44b4-987d-2fcea81f3e98-fd913bfd-29c2-49da-a43c-100b5cfffd91" >
+        <di:waypoint x="324" y="122" />
+        <di:waypoint x="419" y="122" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

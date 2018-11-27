@@ -1,0 +1,5 @@
+package com.learnkafka.consumer;
+
+public class ConsumerKafka {
+
+}

@@ -1,0 +1,17 @@
+package com.howtographql.hackernews;
+
+import javax.servlet.annotation.WebServlet;
+
+import graphql.schema.GraphQLSchema;
+import graphql.servlet.SimpleGraphQLServlet;
+
+@WebServlet(urlPatterns = "/graphql")
+public class GraphQLEndpoint extends SimpleGraphQLServlet {
+
+	public GraphQLEndpoint(GraphQLSchema schema) {
+		super(schema);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}

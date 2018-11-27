@@ -1,0 +1,8 @@
+package billing.entity;
+
+public class Billing {
+
+	long id;
+	String name;
+	
+}
